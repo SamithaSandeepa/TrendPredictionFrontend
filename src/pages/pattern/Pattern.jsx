@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./pattern.scss";
-import Sidebar from '../../components/colorssidebar/Patternbar';
-import Navbar from '../../components/navbar/Navbar';
-import Colorchart from'../../components/colorchart/Colorchart';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import Sidebar from "../../components/colorssidebar/Patternbar";
+import Navbar from "../../components/navbar/Navbar";
+import Colorchart from "../../components/colorchart/Colorchart";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import Header from "../../components/header/Header";
 
 function Patterns() {
   // const [predictedValue, setPredictedValue] = useState("");
@@ -24,25 +25,26 @@ function Patterns() {
   //   }
   // }
   const handleNavigation = () => {
-    navigate('/'); // Navigate to '/dashboard' route
+    navigate("/"); // Navigate to '/dashboard' route
   };
 
   return (
     <div className="colors">
-        <Sidebar/>
-        <div className="homeContainer">
-          <Navbar />
-         <div className="chartcontainer" >
-         <Colorchart />
-         </div>
+      <Sidebar />
+      <div className="homeContainer">
+        {/* <Navbar /> */}
+        <Header />
+        <div className="chartcontainer">
+          <Colorchart />
+        </div>
 
-         
-        
-         {/*<div className="predictvalue">Predicted Value = {predictedValue} </div>*/}
-         <button className="homeBtn" onClick={handleNavigation}>Navigate to Dashboard</button>
-          </div>
+        {/*<div className="predictvalue">Predicted Value = {predictedValue} </div>*/}
+        <button className="homeBtn" onClick={handleNavigation}>
+          Navigate to Dashboard
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Patterns;
