@@ -9,7 +9,7 @@ import Slidder2 from "../../components/slidder/Slidder2";
 const Home = () => {
   return (
     <div className="home">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <div className="homeContainer">
         {/* <Navbar /> */}
         <div className="widgets">
