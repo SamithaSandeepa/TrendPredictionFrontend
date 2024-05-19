@@ -30,7 +30,7 @@ function Colorsbar() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/predict_style', {
+            const response = await axios.post('https://trendpredictionbackend-uu26.onrender.com/predict_style', {
                 gender,
                 month,
                 category
