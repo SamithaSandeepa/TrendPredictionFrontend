@@ -11,9 +11,10 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import PaletteIcon from '@mui/icons-material/Palette';
-import PatternIcon from '@mui/icons-material/Pattern';
-import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
+import PaletteIcon from "@mui/icons-material/Palette";
+import PatternIcon from "@mui/icons-material/Pattern";
+import FormatColorFillIcon from "@mui/icons-material/FormatColorFill";
+import { SiTaichilang } from "react-icons/si";
 
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -25,7 +26,8 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">ADMIN</span>
+          <SiTaichilang />
+          <span className="brand-name">BASH</span>
         </Link>
       </div>
       <hr />
@@ -50,35 +52,43 @@ const Sidebar = () => {
             </li>
           </Link>
           <Link to="/pattern" style={{ textDecoration: "none" }}>
-          <li>
-            <PatternIcon className="icon" />
-            <span>Prints</span>
-          </li>
+            <li>
+              <PatternIcon className="icon" />
+              <span>Prints</span>
+            </li>
           </Link>
           <Link to="/style" style={{ textDecoration: "none" }}>
-        
-          <li>
-            <FormatColorFillIcon className="icon" />
-            <span>Styles</span>
-          </li>
+            <li>
+              <FormatColorFillIcon className="icon" />
+              <span>Styles</span>
+            </li>
           </Link>
           <p className="title">Current Trends</p>
 
-            <a href="http://127.0.0.1:8000/currenttrends?tshirts" style={{ textDecoration: "none" }}>
-              <li>
+          <a
+            href="http://127.0.0.1:8000/currenttrends?tshirts"
+            style={{ textDecoration: "none" }}
+          >
+            <li>
               <InsertChartIcon className="icon" />
               <span>T Shirts</span>
-              </li>
-            </a>
+            </li>
+          </a>
 
-          <a href="http://127.0.0.1:5000/currenttrends?dresses" style={{ textDecoration: "none" }}>
+          <a
+            href="http://127.0.0.1:5000/currenttrends?dresses"
+            style={{ textDecoration: "none" }}
+          >
             <li>
               <InsertChartIcon className="icon" />
               <span>Dresses</span>
             </li>
           </a>
 
-          <a href="http://127.0.0.1:5000/currenttrends?skirts" style={{ textDecoration: "none" }}>
+          <a
+            href="http://127.0.0.1:5000/currenttrends?skirts"
+            style={{ textDecoration: "none" }}
+          >
             <li>
               <InsertChartIcon className="icon" />
               <span>Skirts</span>

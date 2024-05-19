@@ -38,8 +38,8 @@ const Header = () => {
     <nav>
       <div className="nav-logo-home-button">
         <NavLink style={getActiveStyle} to="/">
-          <SiTaichilang />
-          <span className="brand-name">BASH</span>
+          {/* <SiTaichilang />
+          <span className="brand-name">BASH</span> */}
         </NavLink>
       </div>
 
