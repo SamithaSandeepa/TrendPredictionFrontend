@@ -29,7 +29,7 @@
 
     .top {
       .logo {
-        color: #999;
+        color: #e7e0e0;
       }
     }
     hr {
@@ -43,21 +43,27 @@
         }
 
         .icon {
-          color: #999;
+          color: #fefefe;
         }
       }
     }
+    span{
+      font-size: 13px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-left: 10px;
+  }
   }
 
   .datatable {
     .datagrid {
-      color: gray;
+      color: rgb(255, 255, 255);
       border: none;
 
       .viewButton,
       .deleteButton,
       .cellWithStatus {
-        color: gray;
+        color: rgb(245, 228, 228);
         border: none;
       }
     }

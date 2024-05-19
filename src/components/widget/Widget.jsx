@@ -5,9 +5,9 @@ import PaletteIcon from '@mui/icons-material/Palette';
 import BorderAllIcon from '@mui/icons-material/BorderAll';
 import PatternIcon from '@mui/icons-material/Pattern';
 import FormatColorFillIcon from '@mui/icons-material/FormatColorFill';
-import colour1 from "../../asessts/coloursNav.jpg";
-import shape1 from "../../asessts/shapesNav.jpg";
-import pattern1 from "../../asessts/coloursNav.PNG";
+import colour1 from "../../asessts/Colours3.PNG";
+import shape1 from "../../asessts/colours2.PNG";
+import pattern1 from "../../asessts/patterns2.PNG";
 
 const Widget = ({ type }) => {
   let data;

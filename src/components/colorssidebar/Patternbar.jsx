@@ -63,7 +63,7 @@ function Colorsbar() {
         };
 
         try {
-            const response = await axios.post('http://localhost:8000/predict_pattern', formToSend, {
+            const response = await axios.post('https://trendpredictionbackend-uu26.onrender.com/predict_pattern', formToSend, {
                 headers: { 'Content-Type': 'application/json' }
             });
             setMessage(response.data.pattern);

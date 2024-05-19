@@ -17,8 +17,13 @@
 
     .title {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 30px;
       color: rgb(0, 0, 0);
+      text-shadow: 
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
     }
 
     

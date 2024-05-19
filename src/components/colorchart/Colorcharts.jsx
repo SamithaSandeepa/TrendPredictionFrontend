@@ -84,19 +84,19 @@ const Horizontalchart = () => {
           labels: ['September', 'October', 'November', 'May', 'March', 'July', 'January', 'February', 'December', 'August', 'April'],
           datasets: [
             {
-              label: '2023',
+              label: 'Blue',
               data: dataSet1,
               borderColor: 'rgb(135, 206, 235)',
               backgroundColor: 'rgb(135, 206, 235)',
             },
             {
-              label: '2024',
+              label: 'Black',
               data: dataSet2,
               borderColor: 'rgb(0, 0, 0)',
               backgroundColor: 'rgb(0, 0, 0)',
             },
             {
-              label: '2025',
+              label: 'Brown',
               data: dataSet3,
               borderColor: 'rgb(196, 164, 132)',
               backgroundColor: 'rgb(169, 164, 132)',
