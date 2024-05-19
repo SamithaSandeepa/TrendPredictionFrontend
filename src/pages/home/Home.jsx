@@ -4,12 +4,11 @@ import "./home.scss";
 import Widget from "../../components/widget/Widget";
 import Slidder1 from "../../components/slidder/Slidder1";
 import Slidder2 from "../../components/slidder/Slidder2";
-import Header from "../../components/header/Header";
 
 const Home = () => {
   return (
     <div className="home">
-      <Header />
+      {/* <Header /> */}
       <div className="homeContainer">
         <Sidebar />
         <div className="mainContent">
