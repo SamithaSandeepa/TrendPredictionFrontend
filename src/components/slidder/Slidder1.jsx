@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './slidder1.scss'; // Import CSS file for styling the slideshow
-import slide1 from "../../asessts/shapesNav.PNG";
 
 const Slideshow = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
