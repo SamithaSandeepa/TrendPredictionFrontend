@@ -139,7 +139,7 @@ function Colorsbar() {
 
                     </>
                 );
-            case "female":
+            case "WOMEN":
                 return (
                     <>
                         <div className="sub-div">
